@@ -45,7 +45,6 @@ hr {
   align-items: center;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-  margin-bottom:100px;
 }
 
 #main-content > h3 {
@@ -60,7 +59,7 @@ hr {
 }
 
 #main-content > p {
-  margin-bottom:100px;
+  margin-bottom:30px;
   font-size:20px;
 }
 
@@ -147,7 +146,7 @@ button.night {
 }
 
 .gradient-background3 {
-  background: linear-gradient(300deg, black, grey, rgb(65, 65, 65));
+  background: linear-gradient(300deg, black, grey, black);
   background-size: 180% 180%;
   animation: gradient-animation 5s ease infinite;
 }
@@ -162,4 +161,59 @@ button.night {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.header-diplome-extra {
+  margin-top:20px;
+  margin-bottom:15px;
+}
+
+.header-previzualizare-diplome {
+  margin-bottom:15px;
+}
+
+.btn-pdf {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.btn-pdf::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Grosimea liniei subliniate */
+  bottom: 0;
+  left: 0;
+  background-color: blue; /* Culoarea liniei subliniate */
+  transition: width 0.3s ease;
+}
+
+.btn-pdf:hover::before {
+  width: 100%; /* Lățimea liniei subliniate atunci când se trece cu mouse-ul peste link */
+}
+
+.btn-pdf:hover {
+  color: black;
+}
+
+.btn-pdf {
+  padding: 5px;
+  margin:5px;
+  border:none;
+  color: grey;
+  background-color: #e0e0eb;
+  font-size: 20px;
+}
+
+#div-pdf {
+  background-color:#e0e0eb;
+  width:99vw;
+  margin-top:20px;
+  padding-top:5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
